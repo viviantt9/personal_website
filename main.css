@@ -1,0 +1,26 @@
+
+.topnav {
+    overflow: hidden;
+} 
+
+.topnav a {
+    float: right;
+    color: #FEFAE0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    position: relative;
+    border-bottom: 2px solid transparent;
+}
+
+.topnav a:hover {
+    border-bottom: 2px solid #FEFAE0;
+    transition: 0.05s;
+}
+
+ html {
+    background: linear-gradient(#CCD5AE, #ffffff);
+    font-family: 'Trispace', sans-serif;
+ }
