@@ -1,39 +1,55 @@
 
 html {
-    background: linear-gradient(#b0bc87, #C9D5B5);
+    background:#b0bc87;
+    /* background: linear-gradient(#b0bc87, #C9D5B5); */
     height: 100%;
     font-family: 'Trispace', sans-serif;
+    scroll-behavior: smooth;
+ }
+ .ran{
+    color: #516b40
  }
 
 .topnav {
     overflow: hidden;
     display: block;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: #b0bc87;
+
 } 
 
 .topnav-left a img{
     float: left;
-    padding-top: 10px;
-    padding-left: 10px;
+    padding-top: 0.7em;
+    padding-left: 0.6em;
 }
 
 .topnav-right a {
     float: right;
     color: #FEFAE0;
     text-align: center;
-    font-size: 17px;
-    padding: 14px 16px;
+    font-size: 1.5em;
+    padding: 0.5em 1em;
     text-decoration: none;
-    border-bottom: 2px solid transparent;
+    border-bottom: 0.1em solid transparent;
 }
 
 .topnav-right a:hover {
-    border-bottom: 2px solid #FEFAE0;
+    border-bottom: 0.1em solid #FEFAE0;
     transition: 0.05s;
 }
 
-.body{
+body{
     min-width: 100vh;
+}
+
+body section {
+    scroll-margin-top: 4rem;
+    margin-bottom: 15em;
 }
 
 .header {
@@ -43,9 +59,8 @@ html {
     color: #FEFAE0;
 }
 
-
 .icon{
-    max-width: 30px;
+    max-width: 2.2em;
     height: auto;
 }
 
@@ -53,15 +68,30 @@ html {
     opacity: 80%;
 }
 
+
+.face {
+    width: 20em;
+    height: 20em;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+    margin: 3em auto 3em auto;
+}
+
+.gif{
+    width: 100%;
+    image-rendering: crisp-edges;
+}
+
 .about-paragraph {
-    font-size: 15px;
+    font-size: 1.2em;
     text-align: center;
     color: #FEFAE0;
 }
 
 .deck {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     max-width: 1000px;
     margin: auto;
 }
@@ -74,4 +104,53 @@ html {
     justify-content: center;
     background-color: #f1f1f1;
   }
+
+.card-image{
+      display: flex;
+      flex: 1 1;
+      float: left;
+      max-width: 200px;
+      height:auto
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    max-width: 80em;
+    margin: auto;
+    gap: 2em;
+}
+
+.portrait{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 0.8em;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #f1f1f1;
+    aspect-ratio: 2/1.4;
+}
+
+.portrait-image{
+    height: 100%;
+}
+
+.hidden-text{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    font-size: 25px;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.portrait-image:hover {
+    opacity: 50%;
+}
+
+.portrait-image:hover ~ .hidden-text{
+    visibility: visible;  
+}
+
+
 
