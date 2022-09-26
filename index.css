@@ -83,10 +83,16 @@ body section {
     image-rendering: crisp-edges;
 }
 
+#about {
+    margin: 5em;
+    border: 0.7em solid #FEFAE0;
+}
+
 .about-paragraph {
     font-size: 1.2em;
     text-align: center;
     color: #FEFAE0;
+    margin: auto 10em 2em 10em;
 }
 
 .deck {
